@@ -32,7 +32,9 @@ export const userSlice = createSlice({
 export const loginUser = (body) => async (dispatch) => {
   try {
 
-    const user = await axios.post("https://videoclub-proyecto5.herokuapp.com/api/auth/login", body);
+    const user = await axios.post("https://zsnkrs.herokuapp.com/api/auth/login", body);
+
+    console.log(user);
 
     let decodificada = jwt(user.data.token);
     console.log(decodificada)
@@ -66,7 +68,7 @@ export const deleteUser = (datosUsuario) => async (dispatch) => {
     headers: { Authorization: `Bearer ${datosUsuario.token}` }
   };
 
-  let DeleteUser = await axios.delete(`https://videoclub-proyecto5.herokuapp.com/api/users/${datosUsuario.user_id}`, config);
+  let DeleteUser = await axios.delete(`zsnkrs.herokuapp.com/api/users/${datosUsuario.user_id}`, config);
   
   window.location.reload(false);
   
@@ -85,10 +87,9 @@ export const updateUser = (datosUsuario, perfilUsuario) => async (dispatch) => {
     let body = {
       name: perfilUsuario.user_name,
       surname: perfilUsuario.user_surname,
-      email: perfilUsuario.user_email,
+      phone: perfilUsuario.user_phone,
       address: perfilUsuario.user_address,
-      city: perfilUsuario.user_city,
-      phone: perfilUsuario.user_phone
+      email: perfilUsuario.user_email
 
     }
 
@@ -98,9 +99,8 @@ export const updateUser = (datosUsuario, perfilUsuario) => async (dispatch) => {
       headers: { Authorization: `Bearer ${datosUsuario.token}` }
     };
 
-    let resultado = await axios.put(`https://videoclub-proyecto5.herokuapp.com/api/users/${datosUsuario.user_id}`, body, config);
-    console.log(resultado,"resultado despues axios");
-    console.log("datos usuario despues axios", datosUsuario);
+    let resultado = await axios.put(`https://zsnkrs.herokuapp.com/api/users/${datosUsuario.user_id}`, body, config);
+    console.log("datos usuario despues axios", resultado.data.data);
     //Después de cambiar en la database los datos de usuario, cambiamos esos datos
     //en redux.
 
