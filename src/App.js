@@ -6,6 +6,8 @@ import Login from './containers/User/Login/Login';
 import Register from './containers/User/Register/Register';
 import Profile from './containers/User/Profile/Profile';
 import Update from './containers/User/Update/Update';
+import Products from './containers/Products/Products';
+import ProductDetail from './containers/ProductDetail/ProductDetail'
 
 function App() {
   return (
@@ -17,7 +19,10 @@ function App() {
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/profile" element={<Profile/>}/>
-          <Route path="/update" element={<Update/>}/>          
+          <Route path="/update" element={<Update/>}/> 
+          <Route path="/products" element={<Products/>}/> 
+          <Route path="/detail" element={<ProductDetail/>}/> 
+                   
         </Routes>
       </BrowserRouter>
     </div>

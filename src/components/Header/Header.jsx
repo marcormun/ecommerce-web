@@ -23,14 +23,11 @@ const Header = () => {
                         <div className="text-2xl font-bold">z-snkrs</div>
                     </div>
                     <ul className="flex items-center cursor-pointer">
-                        <li>
+                        <li onClick={() => navigate("/products")}>
                             Products
                         </li>
                         <li className='ml-8'>
                             Incoming
-                        </li>
-                        <li className='ml-8'>
-                            About us
                         </li>
                         <li className='ml-8'>
                             Contact

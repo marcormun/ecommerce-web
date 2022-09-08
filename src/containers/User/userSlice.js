@@ -68,7 +68,7 @@ export const deleteUser = (datosUsuario) => async (dispatch) => {
     headers: { Authorization: `Bearer ${datosUsuario.token}` }
   };
 
-  let DeleteUser = await axios.delete(`zsnkrs.herokuapp.com/api/users/${datosUsuario.user_id}`, config);
+  await axios.delete(`https://zsnkrs.herokuapp.com/api/users/${datosUsuario.user_id}`, config);
   
   window.location.reload(false);
   
