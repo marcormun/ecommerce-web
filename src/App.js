@@ -8,6 +8,8 @@ import Profile from './containers/User/Profile/Profile';
 import Update from './containers/User/Update/Update';
 import Products from './containers/Products/Products';
 import ProductDetail from './containers/ProductDetail/ProductDetail'
+import Orders from './containers/Orders/Orders';
+import Admin from './containers/Admin/Admin';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/update" element={<Update/>}/> 
           <Route path="/products" element={<Products/>}/> 
           <Route path="/detail" element={<ProductDetail/>}/> 
+          <Route path="/orders" element={<Orders/>}/> 
+          <Route path="/admin" element={<Admin/>}/> 
                    
         </Routes>
       </BrowserRouter>

@@ -16,7 +16,7 @@ const Header = () => {
         dispatch(logOut());
     }
      return (
-         <div className='font-sans bg-orange-400 text-black ml-2 mr-2 mt-2 rounded-lg border-b border-orange-600'>
+         <div className='font-sans bg-gradient-to-r from-orange-600 to-orange-400 text-black ml-2 mr-2 mt-2 rounded-lg border-b border-orange-600'>
             <nav className=''>
                 <div className="container mx-auto flex items-end justify-between px-4 py-6">
                     <div className='cursor-pointer flex items-center' onClick={() => navigate("/")}>
@@ -26,8 +26,8 @@ const Header = () => {
                         <li onClick={() => navigate("/products")}>
                             Products
                         </li>
-                        <li className='ml-8'>
-                            Incoming
+                        <li className='ml-8' onClick={() => navigate("/orders")}>
+                            Orders
                         </li>
                         <li className='ml-8'>
                             Contact
@@ -46,7 +46,7 @@ const Header = () => {
                         <ul className="flex items-center">
                             {credenciales.user_role==='admin' ?
                                 <li className='ml-16'>
-                                    <div className='textLink cursor-pointer' onClick={() => navigate("/adminpanel")}>Admin</div>
+                                    <div className='textLink cursor-pointer' onClick={() => navigate("/admin")}>Admin</div>
                                 </li>
                             : <p></p>
                             }

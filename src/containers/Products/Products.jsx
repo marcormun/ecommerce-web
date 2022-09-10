@@ -40,8 +40,8 @@ const Products = () => {
                     productosDefecto.map(producto => {
                         return (
                             <div className=" mt-12 mb-2 w-64 cursor-pointer" key={producto._id} onClick={() => ProductoEscogido(producto)}>
-                                <img className="w-64 " src={producto.image} />
-                                <a className="text-base mt-2 hover:text-gray-300">{producto.name}</a>
+                                <img alt='' className="w-64 " src={producto.image} />
+                                <p className="text-base mt-2 hover:text-gray-300">{producto.name}</p>
                                 <div className="flex justify-center items-center text-gray-400">
                                     
                                     <span className='ml-1'>{producto.price} €</span>
