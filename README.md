@@ -14,7 +14,7 @@ Hecha con React, Redux y Tailwindcss
     - [Home](#Home)
     - [Productos](#Productos)
     - [Productos detalle](#Productos-detalle)
-    - [Contacto](#Contacto)
+    - [Pedido](#Pedido)
     - [Contacto](#Contacto)
     - [Login](#Login)
     - [Register](#Register)
