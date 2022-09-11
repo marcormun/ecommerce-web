@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Z-SNKRS ecommerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Frontend para la tienda electrónica de sneakers Z-SNKRS, centrada en productos con "exclusividad".
 
-## Available Scripts
+Hecha con React, Redux y Tailwindcss
 
-In the project directory, you can run:
+[Enlace](https://github.com/marcormun/ecommerce-backend) al github del backend.
 
-### `npm start`
+# Tabla
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Descripcion](#Descripción)
+- [Vistas](#Vistas)
+- [Autor](#Autor)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Descripción
 
-### `npm test`
+Pagina web sencilla para comprar productos exclusivos, con una vista principal para poner las promociones, una vista de los productos, que te envian a la pagina de detalle donde puedes hacer un pedido y una vista de los pedidos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A parte vistas de usuario para registrarse, logearse y modificar el perfil/ eliminar cuenta.
+El administrador tiene una vista para eliminar pedidos.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Vistas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Header
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Consta de un logo que redirige a home, vista productos, pedidos, contacto, login y registro.
 
-### `npm run eject`
+En caso de haber iniciado sesión login y register desaparecen y en su sitio se muestran las vistas de perfil y de cerrar sesión. El administrador a parte tiene la vista de admin.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Home
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Vista sencilla de bienvenida, con pancarta promocional que redirige a la vista de productos de la promoción.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Productos
 
-## Learn More
+Muestra todos los productos disponibles en la tienda, su precio y stock.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Productos detalle
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Muestra todo lo anterior del producto seleccionado con una pequeña descripcion y dos botones, uno para volver a todos los productos y el otro para realizar un pedido.
 
-### Code Splitting
+## Contacto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Formulario de contacto simple para dudas/quejas
 
-### Analyzing the Bundle Size
+## Login
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Vista login con validaciones
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Register
 
-### Advanced Configuration
+Vista register con validaciones
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Perfil
 
-### Deployment
+Muestra los datos del usuario y dos botones, uno para eliminar la cuenta y otro para modificar el perfil
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Modificar perfil
 
-### `npm run build` fails to minify
+Muestra de nuevo todos los campos permitiendo modificar la dirección y dos botones, uno para confirmar y otro para volver al perfil
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Panel Admin
+
+Muestra los pedidos de todos los usuarios y permite eliminarlos
+
+## Autor
+
+#### [Marc Cordón Muñoz](https://github.com/marcormun)

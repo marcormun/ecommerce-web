@@ -10,6 +10,8 @@ import Products from './containers/Products/Products';
 import ProductDetail from './containers/ProductDetail/ProductDetail'
 import Orders from './containers/Orders/Orders';
 import Admin from './containers/Admin/Admin';
+import ProductsPromo from './containers/Products/ProductsPromo';
+import Contact from './containers/Contact/Contact';
 
 function App() {
   return (
@@ -26,7 +28,8 @@ function App() {
           <Route path="/detail" element={<ProductDetail/>}/> 
           <Route path="/orders" element={<Orders/>}/> 
           <Route path="/admin" element={<Admin/>}/> 
-                   
+          <Route path="/productspromo" element={<ProductsPromo/>}/>               
+          <Route path="/contact" element={<Contact/>}/>               
         </Routes>
       </BrowserRouter>
     </div>

@@ -12,8 +12,12 @@ const ProductDetail = () => {
     let credenciales = useSelector(userData);
     let navigate = useNavigate();
 
+    // Ordenar un pedido
     const hacerPedido = async () => {
         let orderDate = moment().format('YYYY-MM-DD');
+
+        //Si no está logeado lo mandamos al login
+        
         if(!credenciales.user_role){
             navigate('/login');
         }else{

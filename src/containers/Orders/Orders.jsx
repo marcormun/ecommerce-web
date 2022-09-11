@@ -12,6 +12,7 @@ const ComponentName = () => {
         console.log(pedidosDefecto);
     },[]);
 
+    // Recoje todos los pedidos del usuario y los añade a pedidosDefecto
     const PedidosApi = async () => {
         try{
             let config = {
@@ -24,7 +25,8 @@ const ComponentName = () => {
             console.log(error)
         }
     }
-
+    
+    // funcion eliminar pedido
     const eliminarPedido = async (pedidoId) => {
         try{
             let config = {
@@ -48,7 +50,7 @@ const ComponentName = () => {
                                 <img className='' src={pedido.productImg}/>
                                 <div className='ml-8 text-left flex flex-col'>
                                     <div>Status: {pedido.status}</div>
-                                    <div>Order date: {pedido.orderDate}</div>
+                                    <div className='mb-4'>Order date: {pedido.orderDate}</div>
                                     {pedido.status === "recieved" &&
                                         <button type="button" onClick={() => eliminarPedido(pedido._id)} className="text-white bg-gradient-to-br from-orange-700 to-orange-500 hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Wipe out</button> 
                                     }

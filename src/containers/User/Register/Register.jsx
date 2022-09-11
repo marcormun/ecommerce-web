@@ -63,6 +63,12 @@ const Register = (props) => {
             return;
         }
 
+        if (! /[\d()+-]/g.test(datosUser.password) ) {
+            
+            setMsgError('Introduce un password válido');
+            return;
+        };
+
         //Limpiamos error
         setMsgError(false);
 

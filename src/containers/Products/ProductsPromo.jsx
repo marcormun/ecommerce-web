@@ -5,7 +5,7 @@ import { keepProduct } from '../../containers/ProductDetail/detailSlice';
 import { useNavigate } from 'react-router-dom';
 
 
-const Products = () => {
+const ProductsPromo = () => {
     let navegador = useNavigate();
     let dispatch = useDispatch();
 
@@ -16,16 +16,17 @@ const Products = () => {
         console.log(ProductosApi);
     }, []);
 
-    // Recoge todos los productos y los añade a productosDefecto
+    // Recoge todos los productos del proveedor Vans y los añade a productosDefecto
+
     const ProductosApi = async () => {
         try {
-            let productos = await axios.get("https://zsnkrs.herokuapp.com/api/products");
+            let productos = await axios.get("https://zsnkrs.herokuapp.com/api/products/provider/631cdb5c57d889d572022c1f");
             setProductosDefecto(productos.data.data);
         } catch (error) {
             console.log(error)
         }
     }
-
+    
     //funcion guardar producto en redux para mostrarlo en los detalles
     const ProductoEscogido = (producto) => {
         dispatch(keepProduct(producto));
@@ -61,4 +62,4 @@ const Products = () => {
         </div>
     )
 }
-export default Products;
+export default ProductsPromo;
