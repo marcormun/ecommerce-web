@@ -10,6 +10,16 @@ Hecha con React, Redux y Tailwindcss
 
 - [Descripcion](#Descripción)
 - [Vistas](#Vistas)
+    - [Header](#Header)
+    - [Home](#Home)
+    - [Productos](#Productos)
+    - [Productos detalle](#Productos-detalle)
+    - [Contacto](#Contacto)
+    - [Contacto](#Contacto)
+    - [Login](#Login)
+    - [Register](#Register)
+    - [Perfil](#Perfil)
+    - [Modificar perfil](#Modificar-perfil)
 - [Autor](#Autor)
 
 # Descripción
@@ -17,6 +27,7 @@ Hecha con React, Redux y Tailwindcss
 Pagina web sencilla para comprar productos exclusivos, con una vista principal para poner las promociones, una vista de los productos, que te envian a la pagina de detalle donde puedes hacer un pedido y una vista de los pedidos.
 
 A parte vistas de usuario para registrarse, logearse y modificar el perfil/ eliminar cuenta.
+
 El administrador tiene una vista para eliminar pedidos.
 
 
