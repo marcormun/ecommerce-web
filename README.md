@@ -30,6 +30,14 @@ A parte vistas de usuario para registrarse, logearse y modificar el perfil/ elim
 
 El administrador tiene una vista para eliminar pedidos.
 
+Cuentas para testear:
+
+Usuario:
+
+usuario@gmail.com/user1234
+
+administrador@gmail.com/admin1234
+
 
 ## Vistas
 
