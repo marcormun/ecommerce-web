@@ -36,6 +36,8 @@ Usuario:
 
 usuario@gmail.com/user1234
 
+Administrador:
+
 administrador@gmail.com/admin1234
 
 
